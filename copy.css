@@ -1,0 +1,193 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.banner-section{
+    width: 100%;
+    position: relative;
+}
+.banner-section .banner-image{
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: top;
+}
+.banner-section .banner-heading{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    position: absolute;
+    top: 42%;
+    left: 44%;
+    color: azure;
+}
+
+.info-container{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.info-container .info-card{
+    width: calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info-container .info-card .info-content,.info-container .info-card-two .info-content-two{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 95%;
+}
+.info-container .info-card .info-content h1{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    color: #a55e3f;
+}
+.info-container .info-card .info-content p , .info-container .info-card-two .info-content-two p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    font-style: italic;
+}
+.info-container .info-card-two{
+    width: calc(50% - 2rem);
+    display: flex;
+    gap: 2rem;
+    
+}
+.info-container .info-card-two .info-content-two h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    color: #a55e3f;
+}
+.info-container .info-card-two .info-content-two p.link{
+    transition: 0.4s ease;
+    margin-left: 3rem;
+}
+.info-container .info-card-two .info-content-two p.link a{
+    text-decoration: none;
+    color: #a55e3f;
+    font-size: 0.9rem;
+    position: relative;
+}
+.info-container .info-card-two .info-content-two p.link a::after {
+    position: absolute;
+    content: " ";
+    background: #2f1818;
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    left: -50px;
+    transition: 0.2s ease;
+}
+.info-container .info-card-two .info-content-two p.link:hover a::after {
+    position: absolute;
+    content: " ";
+    background: #2f1818;
+    width: 35px;
+    height: 2px;
+    top: 50%;
+    left: -40px;
+}
+.cards-container{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.cards-container .sub-card{
+    width: calc(33% - 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-container .sub-card .card-image{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.cards-container .sub-card .card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.cards-container .sub-card .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.cards-container .sub-card .card-content h2{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    color: #a55e3f;
+}
+.cards-container .sub-card .card-content p{
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family: 'Alegreya';
+    letter-spacing: 0.6px;
+    word-spacing: 4px;
+    font-style: italic;
+}
+.cards-container .sub-card .card-content p.card-link{
+    margin-top: 0.5rem;
+    transition: 0.4s ease;
+}
+.cards-container .sub-card .card-content p.card-link a{
+    text-decoration: none;
+    color: #2f1818;
+    font-size: 0.9rem;
+    position: relative;
+}
+.cards-container .sub-card .card-content p.card-link a::after{
+    position: absolute;
+    content: " ";
+    background: #2f1818;
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    left: -60px;
+    transition: 0.2s ease;
+}
+.cards-container .sub-card .card-content p.card-link:hover a::after{
+    position: absolute;
+    content: " ";
+    background: #2f1818;
+    width: 35px;
+    height: 2px;
+    top: 50%;
+    left: -40px;
+}
