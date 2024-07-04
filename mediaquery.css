@@ -1,4 +1,4 @@
-/* medium devices */
+/* medium devices tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .banner-section .banner-heading{
         left: 41%;
